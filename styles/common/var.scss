@@ -1,0 +1,135 @@
+$border-radius: 4px;
+$white: #fff;
+$black: #000000 !default;
+
+$primary: #409EFF;
+$success: #67c23a;
+$warning: #e6a23c;
+$danger: #f56c6c;
+$info: #909399;
+
+$primary-hover: #66b1ff;
+$success-hover: #85ce61;
+$warning-hover: #ebb563;
+$danger-hover: #f78989;
+$info-hover: #a6a9ad;
+
+$primary-active: #3a8ee6;
+$success-active: #5daf34;
+$warning-active: #cf9236;
+$danger-active: #dd6161;
+$info-active: #82848a;
+
+$primary-disabled: #a0cfff;
+$success-disabled: #b3e19d;
+$warning-disabled: #f3d19e;
+$danger-disabled: #fab6b6;
+$info-disabled: #c8c9cc;
+//color
+$--color-text-regular: #606266 !default;
+$--border-color-base: #DCDFE6 !default;
+
+$--color-text-placeholder: #C0C4CC !default;
+$--border-color-lighter: #EBEEF5 !default;
+
+//Typography
+$--font-path: 'fonts' !default;
+$--font-display: 'auto' !default;
+
+$--font-size-base: 14px !default;
+$--font-weight-primary: 500 !default;
+
+//border
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+$--border-radius-base: 4px !default;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+
+//button
+$--button-default-background-color:$white; 
+$--button-default-border-color: $--border-color-base !default;
+$--button-default-font-color: $--color-text-regular !default;
+$--button-font-weight: $--font-weight-primary !default;
+$--button-font-size: $--font-size-base !default;
+$--button-border-radius: $--border-radius-base !default;
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 20px !default;
+
+$--button-disabled-font-color: $--color-text-placeholder !default;
+$--button-disabled-background-color: $white !default;
+$--button-disabled-border-color: $--border-color-lighter !default;
+
+$--button-primary-border-color: $primary !default;
+$--button-primary-font-color: $white !default;
+$--button-primary-background-color: $primary !default;
+
+$--button-success-border-color: $success !default;
+$--button-success-font-color: $white !default;
+$--button-success-background-color: $success !default;
+
+$--button-warning-border-color: $warning !default;
+$--button-warning-font-color: $white !default;
+$--button-warning-background-color: $warning !default;
+
+$--button-danger-border-color: $danger !default;
+$--button-danger-font-color: $white !default;
+$--button-danger-background-color: $danger !default;
+
+$--button-info-border-color: $info !default;
+$--button-info-font-color: $white !default;
+$--button-info-background-color: $info !default;
+
+$--button-hover-tint-percent: 20% !default;
+$--button-active-shade-percent: 10% !default;
+
+$--button-medium-font-size: $--font-size-base !default;
+$--button-medium-border-radius: $--border-radius-base !default;
+$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-horizontal: 20px !default;
+
+$--button-small-font-size: 12px !default;
+$--button-small-border-radius: #{$--border-radius-base - 1} !default;
+$--button-small-padding-vertical: 9px !default;
+$--button-small-padding-horizontal: 15px !default;
+
+$--button-mini-font-size: 12px !default;
+$--button-mini-border-radius: #{$--border-radius-base - 1} !default;
+$--button-mini-padding-vertical: 7px !default;
+$--button-mini-padding-horizontal: 15px !default;
+
+$primary-light-1: mix($white, $primary, 10%); /* 53a8ff */
+$primary-light-2: mix($white, $primary, 20%); /* 66b1ff */
+$primary-light-3: mix($white, $primary, 30%); /* 79bbff */
+$primary-light-4: mix($white, $primary, 40%); /* 8cc5ff */
+$primary-light-5: mix($white, $primary, 50%); /* a0cfff */
+$primary-light-6: mix($white, $primary, 60%); /* b3d8ff */
+$primary-light-7: mix($white, $primary, 70%); /* c6e2ff */
+$primary-light-8: mix($white, $primary, 80%); /* d9ecff */
+$primary-light-9: mix($white, $primary, 90%); /* ecf5ff */
+$--sm: 768px;
+$--md: 992px;
+$--lg: 1200px;
+$--xl: 1920px;
+$map: (
+  "xs": (max-width: $--sm - 1),
+  "sm": (min-width: $--sm),
+  "md": (min-width: $--md),
+  "lg": (min-width: $--lg),
+  "xl": (min-width: $--xl),
+);
+
+// //inspect 将(min-width: 768px)转字符串，否则会报错
+// @mixin res($key) {
+//   @media only screen and #{inspect(map-get($map,$key))} {
+//     @content;
+//   }
+// }
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(359deg);
+//   }
+// }
+

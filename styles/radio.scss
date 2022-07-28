@@ -1,0 +1,70 @@
+.dz-radio {
+    display: inline-block;
+    color: #606266;
+    font-weight: 500;
+    line-height: 1;
+    margin-right: 30px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    &:last-child {
+        margin-right: 0;
+    }
+    cursor: pointer;
+    .radio_inner {
+        border: 1px solid #dcdfe6;
+        border-radius: 100%;
+        width: 14px;
+        height: 14px;
+        background-color: #fff;
+        position: relative;
+        vertical-align: bottom;
+        cursor: pointer;
+        display: inline-block;
+        box-sizing: border-box;
+        .radio_origina {
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 4px solid #409eff;
+            border-radius: 100%;
+            transition: all 0.3s;
+        }
+    }
+    .radio_origina_text {
+        color: #409eff;
+        transition: color 0.3s;
+    }
+    .radio_inner_hover {
+        &:hover {
+            border-color: #409eff;
+        }
+    }
+    .radio__label {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    &[disabled] {
+        cursor: not-allowed !important;
+        color: #c0c4cc !important;
+        border-color: #c0c4cc !important;
+        span {
+            cursor: not-allowed !important;
+        }
+        .radio_inner {
+            background-color: #f5f7fa !important;
+            .radio_origina {
+                border-color: #c0c4cc !important;
+            }
+        }
+    }
+
+    &[size] {
+        font-size: 50px;
+    }
+}

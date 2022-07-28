@@ -1,0 +1,83 @@
+.dz-checkbox-button {
+    display: inline-block;
+    color: #606266;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .checkbox_inner {
+        border: 1px solid #dcdfe6;
+        padding: 12px 20px;
+        border-left: 0;
+        background-color: #fff;
+        position: relative;
+        vertical-align: bottom;
+        cursor: pointer;
+        display: inline-block;
+        box-sizing: border-box;
+        transition: all 0.3s;
+    }
+    .is_checked {
+        color: #fff !important;
+        border-color: #409eff !important;
+        background-color: #409eff !important;
+        transition: all 0.3s;
+        border-left-color: #fff !important;
+        border-right-color: #fff !important;
+    }
+    .checkbox_inner_hover {
+        &:hover {
+            color: #409eff;
+        }
+    }
+    &:first-child .checkbox_inner {
+        border-left: 1px solid #dcdfe6;
+        border-radius: 4px 0 0 4px;
+    }
+    &:first-child .is_checked {
+        border-left-color: #409eff !important;
+    }
+    &:last-child .is_checked {
+        border-right-color: #409eff !important;
+    }
+    &:last-child .checkbox_inner {
+        border-radius: 0 4px 4px 0;
+    }
+    &[disabled] {
+        cursor: not-allowed !important;
+        color: #c0c4cc !important;
+
+        span {
+            cursor: not-allowed !important;
+            border-color: #ebeef5 !important;
+        }
+        .is_checked {
+            background-color: #f5f7fa !important;
+            border-color: #ebeef5 !important;
+            color: #c0c4cc !important;
+            background-image: none !important;
+            span {
+                background-color: #f5f7fa !important;
+            }
+        }
+    }
+
+    .medium {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .small {
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+    .mini {
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+}
