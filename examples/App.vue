@@ -330,11 +330,7 @@
             <dz-button type="primary" icon="dz-icon-edit" circle></dz-button>
             <dz-button type="success" icon="dz-icon-check" circle></dz-button>
             <dz-button type="info" icon="dz-icon-message" circle></dz-button>
-            <dz-button
-                type="warning"
-                icon="dz-icon-star-off"
-                circle
-            ></dz-button>
+            <dz-button type="warning" icon="dz-icon-star-off" circle></dz-button>
             <dz-button type="danger" icon="dz-icon-delete" circle></dz-button>
         </div>
         <div class="row">
@@ -354,18 +350,12 @@
             <dz-button type="primary" icon="dz-icon-share"></dz-button>
             <dz-button type="primary" icon="dz-icon-delete"></dz-button>
             <dz-button type="primary" icon="dz-icon-search">搜索</dz-button>
-            <dz-button type="primary"
-                >上传<i class="dz-icon-upload dz-icon--right"></i
-            ></dz-button>
+            <dz-button type="primary">上传<i class="dz-icon-upload dz-icon--right"></i></dz-button>
         </div>
         <div class="row">
             <dz-button-group>
-                <dz-button type="primary" icon="dz-icon-arrow-left"
-                    >上一页</dz-button
-                >
-                <dz-button type="primary"
-                    >下一页<i class="dz-icon-arrow-right dz-icon--right"></i
-                ></dz-button>
+                <dz-button type="primary" icon="dz-icon-arrow-left">上一页</dz-button>
+                <dz-button type="primary">下一页<i class="dz-icon-arrow-right dz-icon--right"></i></dz-button>
             </dz-button-group>
             <dz-button-group style="margin-left: 20px">
                 <dz-button type="primary" icon="dz-icon-edit"></dz-button>
@@ -387,33 +377,67 @@
             <dz-button round>默认按钮</dz-button>
             <dz-button size="medium" round>中等按钮</dz-button>
             <dz-button size="small" round>小型按钮</dz-button>
-            <dz-button size="mini" round native-type="reset"
-                >超小按钮</dz-button
-            >
+            <dz-button size="mini" round native-type="reset">超小按钮</dz-button>
         </div>
         <div class="row">
             <dz-input type="text"></dz-input>
-            <dz-input
-                style="width: 180px"
-                placeholder="请输入内容"
-                :show-password="true"
-            >
-            </dz-input>
+            <dz-input style="width: 180px" placeholder="请输入内容" :show-password="true"> </dz-input>
         </div>
         <div class="row">
             <dz-icon name="platform-eleme"></dz-icon>
             <dz-icon name="share"></dz-icon>
             <dz-icon name="delete"></dz-icon>
+            <dz-select v-model="value" placeholder="请选择">
+                <dz-option
+                    v-for="item in options"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value"
+                ></dz-option>
+            </dz-select>
+        </div>
+        <div class="row">
+            <dz-block title="基础用法" :code="code1">
+                <template #source>
+                    <dz-button @click="open">打开消息框</dz-button>
+                    <dz-button @click="open1">打开消息框</dz-button>
+                    <dz-button @click="open2">打开消息框</dz-button>
+                    <dz-button @click="open3">打开消息框</dz-button>
+                </template>
+            </dz-block>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "App",
+    name: 'App',
     data() {
         return {
-            input: "",
+            input: '',
+            options: [
+                {
+                    value: '选项1',
+                    label: '黄金糕',
+                },
+                {
+                    value: '选项2',
+                    label: '双皮奶',
+                },
+                {
+                    value: '选项3',
+                    label: '蚵仔煎',
+                },
+                {
+                    value: '选项4',
+                    label: '龙须面',
+                },
+                {
+                    value: '选项5',
+                    label: '北京烤鸭',
+                },
+            ],
+            value: '',
         };
     },
     methods: {

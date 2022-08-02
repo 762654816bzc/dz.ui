@@ -10,7 +10,8 @@ module.exports = {
             '/componentsDocs/select',
             '/componentsDocs/popover',
             '/componentsDocs/dialog',
-            '/componentsDocs/message'
+            '/componentsDocs/message',
+            '/componentsDocs/switch'
         ]
     }
 };
