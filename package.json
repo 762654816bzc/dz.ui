@@ -1,6 +1,6 @@
 {
     "name": "dz-ui",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "private": false,
     "description": "vue组件库",
     "keywords": [
@@ -8,7 +8,7 @@
     ],
     "author": "daze",
     "scripts": {
-        "dev": "vue-cli-service serve",
+        "serve": "vue-cli-service serve",
         "build": "vue-cli-service build --mode prod && vue-cli-service build --mode alpha --no-clean && vue-cli-service build --mode common --no-clean && gulp build",
         "test:unit": "vue-cli-service test:unit",
         "test": "karma start",
@@ -44,6 +44,7 @@
         "karma-sourcemap-loader": "^0.3.7",
         "karma-spec-reporter": "0.0.32",
         "karma-webpack": "^4.0.2",
+        "mini-css-extract-plugin": "^2.6.1",
         "mocha": "^7.1.0",
         "node-sass": "^4.12.0",
         "sass-loader": "^8.0.2",
