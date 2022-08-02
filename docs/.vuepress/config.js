@@ -5,6 +5,7 @@ module.exports = {
             '/',
             '/componentsDocs/button',
             '/componentsDocs/input',
+            '/componentsDocs/inputNumber',
             '/componentsDocs/checkbox',
             '/componentsDocs/radio',
             '/componentsDocs/select',
