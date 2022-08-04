@@ -1,0 +1,122 @@
+.dz-input-number {
+    display: inline-block;
+    .dz-input_NumberGroup {
+        position: relative;
+        transition: all 0.3s;
+        &:hover {
+            .dz-input_inner {
+                border-color: #c0c4cc;
+            }
+        }
+    }
+    .dz-input_inner {
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #dcdfe6;
+        box-sizing: border-box;
+        color: #606266 !important;
+        display: inline-block;
+        font-size: inherit;
+        width: 180px;
+        height: 40px;
+        outline: none;
+        padding: 0 50px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2;
+        transition: all 0.3s;
+        &:focus {
+            border-color: #409eff !important;
+        }
+    }
+    .is-disabled {
+        cursor: not-allowed !important;
+        color: #c0c4cc !important;
+        background-color: #f5f7fa;
+        border-color: #e4e7ed !important;
+        .dz-control {
+            cursor: not-allowed !important;
+            color: #c0c4cc !important;
+            background-color: #f5f7fa;
+            border-color: #e4e7ed !important;
+        }
+    }
+    .dz-control {
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        z-index: 1;
+        height: 38px;
+        width: 39px;
+        line-height: 40px;
+        text-align: center;
+        color: #606266;
+        background: #f5f7fa;
+        cursor: pointer;
+        font-size: 13px;
+    }
+    .is-controls-right {
+        border-right: none;
+        border-left: 1px solid #dcdfe6;
+        height: auto;
+        line-height: 19px;
+        left: auto;
+        right: 1px;
+    }
+    .is-controls-decrement {
+        bottom: 1px;
+        top: auto;
+    }
+    .is-controls-increment {
+        bottom: auto;
+        top: 1;
+        border-bottom: 1px solid #dcdfe6;
+    }
+    .dz-input_Numberprepend {
+        left: 1px;
+        border-right: 1px solid #dcdfe6;
+    }
+    .dz-input_Numberappend {
+        right: 1px;
+        border-left: 1px solid #dcdfe6;
+    }
+    .medium {
+        .dz-input_inner {
+            height: 36px;
+            width: 200px;
+            line-height: 36px;
+        }
+        .dz-control {
+            width: 28px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 14px;
+        }
+    }
+    .small {
+        .dz-input_inner {
+            height: 32px;
+            width: 130px;
+            line-height: 32px;
+        }
+        .dz-control {
+            width: 28px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+    }
+    .mini {
+        .dz-input_inner {
+            height: 28px;
+            width: 130px;
+            line-height: 26px;
+        }
+        .dz-control {
+            width: 28px;
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+        }
+    }
+}
